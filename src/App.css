@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #eee;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-link {
@@ -35,4 +35,71 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#quote-box{
+ 
+  background-color: rgba(0,0,0,0.1);
+  color: inherit;
+  width: 50%;
+  margin: auto;
+  padding: 3%;
+  /* text-align: center; */
+  box-shadow: 10px 20px 40px #888888;
+  /* color: rgba(255, 255, 255, .7); */
+}
+
+#quote-text{
+  /* box-shadow: 5px 10px 20px #888888; */
+  color:000;
+  border-radius: 20px;
+  padding: 20px;
+  text-shadow: 2px 5px 8px rgb(255, 255, 255);
+  /* font-family: cursive; */
+  /* background-color: none !important; */
+  /* color: inherit; */
+  /* animation: fadeIn 15s infinite */
+}
+
+.classname {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+  from {
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+  }
+  to {
+    -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
+  }
+}
+
+
+
+ @keyframes pulse {
+  0% {
+    color: rgba(255, 255, 255, .1);
+    /* opacity: 0; */
+  }
+  100% {
+    color: #000;
+    /* opacity: 1; */
+  }
+} 
+
+#author{
+  text-align: right;
+}
+
+#new-quote{
+ /* margin-left: -300px; */
+ margin-right: 55%;
+}
+
+#tweet-quote{
+  text-align: left;
 }
